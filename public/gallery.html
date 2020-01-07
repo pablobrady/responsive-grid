@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gallery Document</title>
+  <link href="https://unpkg.com/tailwindcss@^1.1.3/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<style>
+.wrapper {
+  display: grid;
+  width: auto;
+
+  grid-template-columns: repeat(10, 100px);
+  grid-template-rows: repeat(10, 100px);
+  grid-gap: 10px;
+
+  grid-auto-flow: row dense;
+
+  .box {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+  }
+}
+</style>
+
+<div class="wrapper mx-auto">
+  <div class="box box-1 bg-red-500">1.</div>
+  <div class="box box-2 bg-orange-500">2.</div>
+  <div class="box box-3 bg-green-300">3.</div>
+  <div class="box box-4 bg-blue-300">4.</div>
+  <div class="box box-5 bg-purple-300">5.</div>
+  <div class="box box-6 bg-yellow-300">6.</div>
+  <div class="box box-7 bg-yellow-400">7.</div>
+  <div class="box box-8 bg-yellow-500">8.</div>
+  <div class="box box-9 bg-yellow-600">9.</div>
+  <div class="box box-10 bg-yellow-700">10.</div>
+
+  <div class="box box-1 bg-blue-100">11.</div>
+  <div class="box box-2 bg-blue-200">12.</div>
+  <div class="box box-3 bg-blue-300">13.</div>
+  <div class="box box-4 bg-blue-400">14.</div>
+  <div class="box box-5 bg-purple-100">15.</div>
+  <div class="box box-6 bg-purple-200">16.</div>
+  <div class="box box-7 bg-purple-300">17.</div>
+  <div class="box box-8 bg-purple-400">18.</div>
+  <div class="box box-9 bg-green-100">19.</div>
+  <div class="box box-10 bg-green-200">20.</div>
+
+  <div class="box box-1 bg-red-100">21.</div>
+  <div class="box box-2 bg-orange-200">22.</div>
+  <div class="box box-3 bg-green-300">23.</div>
+  <div class="box box-4 bg-blue-400">24.</div>
+  <div class="box box-5 bg-purple-400">25.</div>
+  <div class="box box-6 bg-yellow-500">26.</div>
+  <div class="box box-7 bg-yellow-600">27.</div>
+  <div class="box box-8 bg-yellow-700">28.</div>
+  <div class="box box-9 bg-yellow-800">29.</div>
+  <div class="box box-10 bg-yellow-900">30.</div>
+</div>
+
+
+</body>
+</html>
