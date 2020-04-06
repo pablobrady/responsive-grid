@@ -27,6 +27,25 @@
   }
 }
 
+@media only screen and (min-width: 320px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(17, 100px);
+  }
+  .box-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .box-16 {
+    grid-column: 2 / span 2;
+    grid-row: 6 / span 2;
+  }
+  .box-32 {
+    grid-column: 1 / span 2;
+    grid-row: 14 / span 2;
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .wrapper {
     grid-template-columns: repeat(4, 100px);
@@ -48,6 +67,7 @@
 @media only screen and (min-width: 600px) {
   .wrapper {
     grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(11, 100px);
   }
   .box-16 {
     grid-column: 4 / span 2;
@@ -61,6 +81,7 @@
 @media only screen and (min-width: 750px) {
   .wrapper {
     grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(9, 100px);
   }
   .box-16 {
     grid-column: 5 / span 2;
@@ -70,6 +91,7 @@
 @media only screen and (min-width: 900px) {
   .wrapper {
     grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(7, 100px);
   }
   .box-16 {
     grid-column: 7 / span 2;
@@ -83,6 +105,7 @@
 @media only screen and (min-width: 1150px) {
   .wrapper {
     grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(6, 100px);
   }
   .box-16 {
     grid-column: 9 / span 2;
@@ -96,7 +119,7 @@
 
 </style>
 
-<div class="flex pt-2">
+<div class="flex py-3">
   <div class="wrapper mx-auto">
     <div class="box box-1 bg-red-500"><img src="http://www.longoverdue4hair.com/images/portfolio_400x400/Haircut_Nathanial.jpg" alt="Haircut"></div>
     <div class="box box-2 bg-orange-500">2.</div>
